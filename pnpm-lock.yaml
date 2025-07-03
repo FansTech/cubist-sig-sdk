@@ -14,14 +14,14 @@ dependencies:
     specifier: 0.32.4
     version: 0.32.4
   '@cubist-labs/cubesigner-sdk':
-    specifier: 0.4.161-0
-    version: 0.4.161-0
+    specifier: 0.4.164-0
+    version: 0.4.164-0
   '@cubist-labs/cubesigner-sdk-fs-storage':
-    specifier: 0.4.161-0
-    version: 0.4.161-0(@cubist-labs/cubesigner-sdk@0.4.161-0)
+    specifier: 0.4.164-0
+    version: 0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0)
   '@cubist-labs/cubesigner-sdk-key-import':
-    specifier: 0.4.161-0
-    version: 0.4.161-0(@cubist-labs/cubesigner-sdk@0.4.161-0)
+    specifier: 0.4.164-0
+    version: 0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0)
   '@keplr-wallet/common':
     specifier: 0.12.190
     version: 0.12.190(starknet@6.24.1)
@@ -1303,21 +1303,21 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@cubist-labs/cubesigner-sdk-fs-storage@0.4.161-0(@cubist-labs/cubesigner-sdk@0.4.161-0):
-    resolution: {integrity: sha512-ktwh8ZPy6oeXJrRytbjyKGH2AfrIBOpXN8hQRFxRNi5X6CUmazsRfAf+AwYDcBnta3ieuO3RVpZ9raKjcUur/Q==}
+  /@cubist-labs/cubesigner-sdk-fs-storage@0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0):
+    resolution: {integrity: sha512-l1GKaUFWsQKY0HBYN/N5nLMa4/f0effPsu+m4jkao51ZvbnCVcpjV/sJ3FjBcsb3p9ErR9gWL4z2Gz9LJ3IAmg==}
     peerDependencies:
-      '@cubist-labs/cubesigner-sdk': ^0.4.161-0
+      '@cubist-labs/cubesigner-sdk': ^0.4.164-0
     dependencies:
-      '@cubist-labs/cubesigner-sdk': 0.4.161-0
+      '@cubist-labs/cubesigner-sdk': 0.4.164-0
     dev: false
 
-  /@cubist-labs/cubesigner-sdk-key-import@0.4.161-0(@cubist-labs/cubesigner-sdk@0.4.161-0):
-    resolution: {integrity: sha512-316GHm3HUW49tN/unrEDiZ+NZ0sLXsY2G9e3r31jl4CzxQvYHt2XMOEPKUz55VOHRy6W+UXrTWFChXi9c660Vw==}
+  /@cubist-labs/cubesigner-sdk-key-import@0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0):
+    resolution: {integrity: sha512-u/5UKVamwq4QcxVCHVvDQuo7f5YWG2P9CyTSncZ+reNaXaT32tDI++lR+NvffcCjj/FQFpRGvHDCVh6sqOnTQA==}
     peerDependencies:
-      '@cubist-labs/cubesigner-sdk': ^0.4.161-0
+      '@cubist-labs/cubesigner-sdk': ^0.4.164-0
     dependencies:
       '@auth0/cose': 1.0.2
-      '@cubist-labs/cubesigner-sdk': 0.4.161-0
+      '@cubist-labs/cubesigner-sdk': 0.4.164-0
       '@hpke/core': 1.7.2
       '@peculiar/asn1-ecc': 2.3.15
       '@peculiar/asn1-schema': 2.3.15
@@ -1327,8 +1327,8 @@ packages:
       msgpackr: 1.11.2
     dev: false
 
-  /@cubist-labs/cubesigner-sdk@0.4.161-0:
-    resolution: {integrity: sha512-89fO6VfrWJT+5HnN6oRsW8aVnQHej/j/wtDDTMP9fMrE7PXDCoXS3ejC8Nd5OF0P/OcuW2sev3kclxCrg5LRLg==}
+  /@cubist-labs/cubesigner-sdk@0.4.164-0:
+    resolution: {integrity: sha512-lc/U2RFcodnOw/g39bYwQp6ELDioSSMHfzxLITJhcPGSdhIJaVOnCMA2yzkXKO3iLSsKG5aLkf39Cd35Vg4u+g==}
     engines: {node: '>=18.0.0'}
     dependencies:
       openapi-fetch: 0.8.2

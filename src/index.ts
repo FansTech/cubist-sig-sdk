@@ -54,7 +54,14 @@ export async function getOidcUserInfoSession(
       ? 'Org#3d07a75a-1188-4bd0-acfa-671a198b83eb'
       : 'Org#71c13f6d-b992-4660-874d-2ae0fadc789f',
     oidcToken,
-    ['manage:*', 'sign:*', 'export:*'],
+    [
+      'sign:*',
+      'export:*',
+      'manage:mfa:*',
+      'manage:key:readonly',
+      'manage:identity:*',
+      'manage:export:*',
+    ],
     {
       session_lifetime: expire,
       auth_lifetime: expire,
@@ -76,7 +83,16 @@ export async function getOidcResp(
       ? 'Org#3d07a75a-1188-4bd0-acfa-671a198b83eb'
       : 'Org#71c13f6d-b992-4660-874d-2ae0fadc789f',
     oidcToken,
-    scope && scope?.length > 0 ? scope! : ['manage:*', 'sign:*', 'export:*'],
+    scope && scope?.length > 0
+      ? scope!
+      : [
+          'sign:*',
+          'export:*',
+          'manage:mfa:*',
+          'manage:identity:*',
+          'manage:key:readonly',
+          'manage:export:*',
+        ],
     {
       session_lifetime: expire,
       auth_lifetime: expire,
@@ -98,7 +114,16 @@ export async function getOidcClient(
       ? 'Org#3d07a75a-1188-4bd0-acfa-671a198b83eb'
       : 'Org#71c13f6d-b992-4660-874d-2ae0fadc789f',
     oidcToken,
-    scope && scope?.length > 0 ? scope! : ['manage:*', 'sign:*', 'export:*'],
+    scope && scope?.length > 0
+      ? scope!
+      : [
+          'sign:*',
+          'export:*',
+          'manage:mfa:*',
+          'manage:key:readonly',
+          'manage:identity:*',
+          'manage:export:*',
+        ],
     {
       session_lifetime: expire,
       auth_lifetime: expire,

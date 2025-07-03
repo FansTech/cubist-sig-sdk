@@ -1,6 +1,6 @@
 {
   "name": "cubist-sig-sdk",
-  "version": "0.0.35",
+  "version": "0.0.38",
   "description": "",
   "type": "commonjs",
   "main": "./dist/index.cjs.js",
@@ -26,9 +26,9 @@
     "@cosmjs/amino": "0.32.4",
     "@cosmjs/crypto": "0.32.4",
     "@cosmjs/proto-signing": "0.32.4",
-    "@cubist-labs/cubesigner-sdk": "0.4.161-0",
-    "@cubist-labs/cubesigner-sdk-fs-storage": "0.4.161-0",
-    "@cubist-labs/cubesigner-sdk-key-import": "0.4.161-0",
+    "@cubist-labs/cubesigner-sdk": "0.4.164-0",
+    "@cubist-labs/cubesigner-sdk-fs-storage": "0.4.164-0",
+    "@cubist-labs/cubesigner-sdk-key-import": "0.4.164-0",
     "@keplr-wallet/common": "0.12.190",
     "@mysten/sui": "1.8.0",
     "@okxweb3/crypto-lib": "1.0.10",
@@ -48,8 +48,8 @@
   },
   "overrides": {
     "bitcore-lib-doge": "10.5.3",
-    "@cubist-labs/cubesigner-sdk": "0.4.161-0",
-    "@cubist-labs/cubesigner-sdk-fs-storage": "0.4.161-0",
-    "@cubist-labs/cubesigner-sdk-key-import": "0.4.161-0"
+    "@cubist-labs/cubesigner-sdk": "0.4.164-0",
+    "@cubist-labs/cubesigner-sdk-fs-storage": "0.4.164-0",
+    "@cubist-labs/cubesigner-sdk-key-import": "0.4.164-0"
   }
 }
