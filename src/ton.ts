@@ -26,9 +26,9 @@ async function signTonTransaction(
     .org()
     .getKeyByMaterialId(cs.Ed25519.Ton, materialId!)
   const tonWeb = getTonWebProvider(isTestnet)
-  const singingMessage = tonWeb.boc.Cell.oneFromBoc(signingMessageBoc)
+  const signingMessage = tonWeb.boc.Cell.oneFromBoc(signingMessageBoc)
   let resp = await key.signBlob({
-    message_base64: tonWeb.utils.bytesToBase64(await singingMessage.hash()),
+    message_base64: tonWeb.utils.bytesToBase64(await signingMessage.hash()),
     metadata: paypin,
   })
   if (resp.requiresMfa()) {
@@ -45,7 +45,7 @@ async function signTonTransaction(
   const signature = resp.data().signature
   const body = new tonWeb.boc.Cell()
   body.bits.writeBytes(Buffer.from(signature.substring(2), 'hex'))
-  body.writeCell(singingMessage)
+  body.writeCell(signingMessage)
   let stateInit = null
   if (stateInitBoc && stateInitBoc.length > 0) {
     stateInit = tonWeb.boc.Cell.oneFromBoc(stateInitBoc)

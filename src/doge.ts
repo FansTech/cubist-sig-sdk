@@ -14,12 +14,19 @@ const PublicKey = require('bitcore-lib-doge/lib/publickey')
 const BufferUtil = require('bitcore-lib-doge/lib/util/buffer')
 const { BN } = require('bitcore-lib-doge/lib/crypto/bn')
 const { fromCompact } = require('bitcore-lib-doge/lib/crypto/signature')
+import { CURVE } from '@noble/secp256k1'
 
 function hexSigToCompact(sig: any) {
   const buf = Buffer.from(sig.slice(2), 'hex')
   const r = buf.subarray(0, 32)
   const s = buf.subarray(32, 64)
   const v = new BN(buf[64]).toNumber() + 27
+  const sBigInt = BigInt('0x' + s.toString('hex'))
+  const halfN = CURVE.n >> 1n
+
+  if (sBigInt > halfN) {
+    throw new Error('Signature s value is not low-s (s > n/2)')
+  }
   return Buffer.concat([Buffer.from([v]), r, s])
 }
 
@@ -115,7 +122,7 @@ async function signDogeByRawTx(
   paypin?: string
 ) {
   const oidcClient = await cs.CubeSignerClient.create(userInfo)
-  const key = await await oidcClient.org().getKey(`Key#Doge_${materialId}`)
+  const key = await oidcClient.org().getKey(`Key#Doge_${materialId}`)
   const publicKey = secp256k1.publicKeyConvert(
     Buffer.from(key!.publicKey.slice(2), 'hex'),
     true

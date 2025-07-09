@@ -28,6 +28,9 @@ dependencies:
   '@mysten/sui':
     specifier: 1.8.0
     version: 1.8.0(typescript@5.8.3)
+  '@noble/secp256k1':
+    specifier: ^2.3.0
+    version: 2.3.0
   '@okxweb3/crypto-lib':
     specifier: 1.0.10
     version: 1.0.10
@@ -2230,6 +2233,10 @@ packages:
 
   /@noble/secp256k1@1.7.2:
     resolution: {integrity: sha512-/qzwYl5eFLH8OWIecQWM31qld2g1NfjgylK+TNhqtaUKP37Nm+Y+z30Fjhw0Ct8p9yCQEm2N3W/AckdIb3SMcQ==}
+    dev: false
+
+  /@noble/secp256k1@2.3.0:
+    resolution: {integrity: sha512-0TQed2gcBbIrh7Ccyw+y/uZQvbJwm7Ao4scBUxqpBCcsOlZG0O4KGfjtNAy/li4W8n1xt3dxrwJ0beZ2h2G6Kw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
