@@ -14,7 +14,7 @@ const PublicKey = require('bitcore-lib-doge/lib/publickey')
 const BufferUtil = require('bitcore-lib-doge/lib/util/buffer')
 const { BN } = require('bitcore-lib-doge/lib/crypto/bn')
 const { fromCompact } = require('bitcore-lib-doge/lib/crypto/signature')
-import { CURVE } from '@noble/secp256k1'
+const { CURVE } = require('@noble/secp256k1')
 
 function hexSigToCompact(sig: any) {
   const buf = Buffer.from(sig.slice(2), 'hex')

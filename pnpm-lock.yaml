@@ -14,14 +14,14 @@ dependencies:
     specifier: 0.32.4
     version: 0.32.4
   '@cubist-labs/cubesigner-sdk':
-    specifier: 0.4.164-0
-    version: 0.4.164-0
+    specifier: 0.4.166-0
+    version: 0.4.166-0
   '@cubist-labs/cubesigner-sdk-fs-storage':
-    specifier: 0.4.164-0
-    version: 0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0)
+    specifier: 0.4.166-0
+    version: 0.4.166-0(@cubist-labs/cubesigner-sdk@0.4.166-0)
   '@cubist-labs/cubesigner-sdk-key-import':
-    specifier: 0.4.164-0
-    version: 0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0)
+    specifier: 0.4.166-0
+    version: 0.4.166-0(@cubist-labs/cubesigner-sdk@0.4.166-0)
   '@keplr-wallet/common':
     specifier: 0.12.190
     version: 0.12.190(starknet@6.24.1)
@@ -29,8 +29,8 @@ dependencies:
     specifier: 1.8.0
     version: 1.8.0(typescript@5.8.3)
   '@noble/secp256k1':
-    specifier: ^2.3.0
-    version: 2.3.0
+    specifier: ^1.7.2
+    version: 1.7.2
   '@okxweb3/crypto-lib':
     specifier: 1.0.10
     version: 1.0.10
@@ -1306,21 +1306,21 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@cubist-labs/cubesigner-sdk-fs-storage@0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0):
-    resolution: {integrity: sha512-l1GKaUFWsQKY0HBYN/N5nLMa4/f0effPsu+m4jkao51ZvbnCVcpjV/sJ3FjBcsb3p9ErR9gWL4z2Gz9LJ3IAmg==}
+  /@cubist-labs/cubesigner-sdk-fs-storage@0.4.166-0(@cubist-labs/cubesigner-sdk@0.4.166-0):
+    resolution: {integrity: sha512-KBY9Ltmlj3exS54iRpXQTRNNhXMEIa9cjwvT3NOhLXSYnEN6N29K9KTIIMRXxv+srXvilV0d6mMP2ZWjkMLvvQ==}
     peerDependencies:
-      '@cubist-labs/cubesigner-sdk': ^0.4.164-0
+      '@cubist-labs/cubesigner-sdk': ^0.4.166-0
     dependencies:
-      '@cubist-labs/cubesigner-sdk': 0.4.164-0
+      '@cubist-labs/cubesigner-sdk': 0.4.166-0
     dev: false
 
-  /@cubist-labs/cubesigner-sdk-key-import@0.4.164-0(@cubist-labs/cubesigner-sdk@0.4.164-0):
-    resolution: {integrity: sha512-u/5UKVamwq4QcxVCHVvDQuo7f5YWG2P9CyTSncZ+reNaXaT32tDI++lR+NvffcCjj/FQFpRGvHDCVh6sqOnTQA==}
+  /@cubist-labs/cubesigner-sdk-key-import@0.4.166-0(@cubist-labs/cubesigner-sdk@0.4.166-0):
+    resolution: {integrity: sha512-Cy0T7Em44GNrYAUMyx6Emk3cMahLEejr91TPbrxcw0WfE4rmtvI8p/6i9Q5CdWvmkZzOJM2hIdMn0aTUQHHAZA==}
     peerDependencies:
-      '@cubist-labs/cubesigner-sdk': ^0.4.164-0
+      '@cubist-labs/cubesigner-sdk': ^0.4.166-0
     dependencies:
       '@auth0/cose': 1.0.2
-      '@cubist-labs/cubesigner-sdk': 0.4.164-0
+      '@cubist-labs/cubesigner-sdk': 0.4.166-0
       '@hpke/core': 1.7.2
       '@peculiar/asn1-ecc': 2.3.15
       '@peculiar/asn1-schema': 2.3.15
@@ -1330,8 +1330,8 @@ packages:
       msgpackr: 1.11.2
     dev: false
 
-  /@cubist-labs/cubesigner-sdk@0.4.164-0:
-    resolution: {integrity: sha512-lc/U2RFcodnOw/g39bYwQp6ELDioSSMHfzxLITJhcPGSdhIJaVOnCMA2yzkXKO3iLSsKG5aLkf39Cd35Vg4u+g==}
+  /@cubist-labs/cubesigner-sdk@0.4.166-0:
+    resolution: {integrity: sha512-LaUICzeBpQVibe1608VWNi7o31P5moINCVMPwAP3t5v9ROpiSnwHIhlMkXqvBXcNHFmb8Vemg3n/VKz8V5+QCA==}
     engines: {node: '>=18.0.0'}
     dependencies:
       openapi-fetch: 0.8.2
@@ -2233,10 +2233,6 @@ packages:
 
   /@noble/secp256k1@1.7.2:
     resolution: {integrity: sha512-/qzwYl5eFLH8OWIecQWM31qld2g1NfjgylK+TNhqtaUKP37Nm+Y+z30Fjhw0Ct8p9yCQEm2N3W/AckdIb3SMcQ==}
-    dev: false
-
-  /@noble/secp256k1@2.3.0:
-    resolution: {integrity: sha512-0TQed2gcBbIrh7Ccyw+y/uZQvbJwm7Ao4scBUxqpBCcsOlZG0O4KGfjtNAy/li4W8n1xt3dxrwJ0beZ2h2G6Kw==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
